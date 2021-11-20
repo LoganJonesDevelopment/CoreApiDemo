@@ -1,12 +1,9 @@
-﻿using CoreApiDemo.Controllers;
-using CoreApiDemo.Infra.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using CoreApiDemo.Infra.Interfaces.Repositories;
+using CoreApiDemo.Infra.Interfaces.Services;
 
 namespace CoreApiDemo.Infra.Services
 {
-    public class GithubService
+    public class GithubService : IGithubService
     {
         private readonly IGithubRepository _githubRepository;
         public GithubService(IGithubRepository githubRepository)
@@ -15,8 +12,8 @@ namespace CoreApiDemo.Infra.Services
         }
         public UserProfile GetUserProfile(string userId)
         {
-            var userProfile = new UserProfile();
-            userProfile = 
+            return _githubRepository.GetUserProfile(userId); // todo error handling
+           
         }
     }
 }

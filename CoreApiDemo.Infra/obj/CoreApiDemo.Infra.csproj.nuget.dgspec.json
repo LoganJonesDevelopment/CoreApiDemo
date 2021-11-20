@@ -4,72 +4,14 @@
     "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Infra\\CoreApiDemo.Infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Infra\\CoreApiDemo.Infra.csproj": {
+    "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Domain\\CoreApiDemo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Infra\\CoreApiDemo.Infra.csproj",
-        "projectName": "CoreApiDemo.Infra",
-        "projectPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Infra\\CoreApiDemo.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Domain\\CoreApiDemo.Domain.csproj",
+        "projectName": "CoreApiDemo.Domain",
+        "projectPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Domain\\CoreApiDemo.Domain.csproj",
         "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Infra\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Logan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo\\CoreApiDemo.csproj": {
-                "projectPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo\\CoreApiDemo.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo\\CoreApiDemo.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo\\CoreApiDemo.csproj",
-        "projectName": "CoreApiDemo",
-        "projectPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo\\CoreApiDemo.csproj",
-        "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo\\obj\\",
+        "outputPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Logan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -108,9 +50,70 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Infra\\CoreApiDemo.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Infra\\CoreApiDemo.Infra.csproj",
+        "projectName": "CoreApiDemo.Infra",
+        "projectPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Infra\\CoreApiDemo.Infra.csproj",
+        "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Logan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Domain\\CoreApiDemo.Domain.csproj": {
+                "projectPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Domain\\CoreApiDemo.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.13.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

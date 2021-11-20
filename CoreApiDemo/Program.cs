@@ -21,6 +21,8 @@ namespace CoreApiDemo
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    
                 });
+
     }
 }

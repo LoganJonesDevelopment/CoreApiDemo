@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\Services\" />
+    <PackageReference Include="RestSharp" Version="106.13.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CoreApiDemo\CoreApiDemo.csproj" />
+    <ProjectReference Include="..\CoreApiDemo.Domain\CoreApiDemo.Domain.csproj" />
   </ItemGroup>
 
 </Project>

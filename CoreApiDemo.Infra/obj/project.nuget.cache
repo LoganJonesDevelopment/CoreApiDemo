@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tNyTka6h6dY6RooddBz3i+eZGIVuy6DUPc3NofHvQ0aBM6lKKSNn5Afr9/kir+jD4cLOXH+cZPwgFENe3w+18g==",
+  "dgSpecHash": "t1Km+rRxbRudE2hEotsKReRcR0qKinni7jrcmyNXlCjsCLGmDBDOlTCwTRomy9591wyEa2ElXO66MFDG/Rvd1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Infra\\CoreApiDemo.Infra.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Logan\\.nuget\\packages\\restsharp\\106.13.0\\restsharp.106.13.0.nupkg.sha512"
+  ],
   "logs": []
 }

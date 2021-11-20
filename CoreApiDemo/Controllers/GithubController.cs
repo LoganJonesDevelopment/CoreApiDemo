@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CoreApiDemo.Infra.Interfaces.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -14,17 +15,19 @@ namespace CoreApiDemo.Controllers
         
 
         private readonly ILogger<GithubController> _logger;
+        private readonly IGithubService _githubService;
 
-        public GithubController(ILogger<GithubController> logger)
+        public GithubController(ILogger<GithubController> logger, IGithubService githubService)
         {
             _logger = logger;
+            _githubService = githubService;
         }
 
         [HttpGet]
-        public async UserProfile GetUserProfile(string userId)
+        public UserProfile GetUserProfile(string userId)
         {
-           var userProfile = new UserProfile();
-            userProfile = await //
+            var userProfile = new UserProfile();
+            return _githubService.GetUserProfile(userId);  //todo error handling
         }
     }
 }

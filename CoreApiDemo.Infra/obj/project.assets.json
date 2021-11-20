@@ -2,31 +2,54 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "CoreApiDemo/1.0.0": {
+      "RestSharp/106.13.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "CoreApiDemo.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/CoreApiDemo.dll": {}
+          "bin/placeholder/CoreApiDemo.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CoreApiDemo.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+          "bin/placeholder/CoreApiDemo.Domain.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "CoreApiDemo/1.0.0": {
+    "RestSharp/106.13.0": {
+      "sha512": "vwUdmmtC5vtePeNfBWnFcixBF2KjUeVv3ss4ZFzCIkOf7NB7W/9qX8JNZD9DOrz2yGk4AJW8k9znwgPZhnoiNg==",
+      "type": "package",
+      "path": "restsharp/106.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.13.0.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
+    "CoreApiDemo.Domain/1.0.0": {
       "type": "project",
-      "path": "../CoreApiDemo/CoreApiDemo.csproj",
-      "msbuildProject": "../CoreApiDemo/CoreApiDemo.csproj"
+      "path": "../CoreApiDemo.Domain/CoreApiDemo.Domain.csproj",
+      "msbuildProject": "../CoreApiDemo.Domain/CoreApiDemo.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "CoreApiDemo >= 1.0.0"
+      "CoreApiDemo.Domain >= 1.0.0",
+      "RestSharp >= 106.13.0"
     ]
   },
   "packageFolders": {
@@ -56,8 +79,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo\\CoreApiDemo.csproj": {
-              "projectPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo\\CoreApiDemo.csproj"
+            "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Domain\\CoreApiDemo.Domain.csproj": {
+              "projectPath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo.Domain\\CoreApiDemo.Domain.csproj"
             }
           }
         }
@@ -71,6 +94,12 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.13.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
