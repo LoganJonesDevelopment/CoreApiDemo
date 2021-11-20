@@ -1,3 +1,7 @@
+using CoreApiDemo.Infra.Interfaces.Repositories;
+using CoreApiDemo.Infra.Interfaces.Services;
+using CoreApiDemo.Infra.Repositories;
+using CoreApiDemo.Infra.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,6 +31,8 @@ namespace CoreApiDemo
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddScoped<IGithubRepository, GithubRepository>();
+            services.AddScoped<IGithubService, GithubService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

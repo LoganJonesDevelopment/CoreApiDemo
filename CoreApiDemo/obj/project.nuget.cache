@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "eaqZUwyhB+RCSjppvBSLf28DbhUzSyowR753eJKr2ZQHbevhK+0ZP4WwWPjN+Ruc2po/bF3U4mSY+ZNqePirIw==",
+  "dgSpecHash": "cRQiIbUkhWE/J6AHP9ZRwDDfjVLerSjK3rCy4juxJzq5VjENC4YkWM5ziyisXc3FAiUuEHEzSIvRd1j6AknoGQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Logan\\source\\repos\\CoreApiDemo\\CoreApiDemo\\CoreApiDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Logan\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Logan\\.nuget\\packages\\restsharp\\106.13.0\\restsharp.106.13.0.nupkg.sha512",
     "C:\\Users\\Logan\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\Logan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "C:\\Users\\Logan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"

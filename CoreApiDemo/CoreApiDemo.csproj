@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CoreApiDemo.Domain\CoreApiDemo.Domain.csproj" />
+    <ProjectReference Include="..\CoreApiDemo.Infra\CoreApiDemo.Infra.csproj" />
   </ItemGroup>
 
 
