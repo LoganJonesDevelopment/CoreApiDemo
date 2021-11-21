@@ -1,5 +1,6 @@
 ﻿using CoreApiDemo.Infra.Interfaces.Repositories;
 using CoreApiDemo.Infra.Interfaces.Services;
+using System.Threading.Tasks;
 
 namespace CoreApiDemo.Infra.Services
 {
@@ -10,10 +11,10 @@ namespace CoreApiDemo.Infra.Services
         {
             _githubRepository = githubRepository;
         }
-        public UserProfile GetUserProfile(string userId)
+        public async Task<UserProfile> GetUserProfile(string userId)
         {
-            return _githubRepository.GetUserProfile(userId); // todo error handling
-           
+            return await _githubRepository.GetUserProfile(userId).ConfigureAwait(false);
+
         }
     }
 }

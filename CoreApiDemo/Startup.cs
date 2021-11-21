@@ -1,3 +1,4 @@
+using CoreApiDemo.Domain.Extensions;
 using CoreApiDemo.Infra.Interfaces.Repositories;
 using CoreApiDemo.Infra.Interfaces.Services;
 using CoreApiDemo.Infra.Repositories;
@@ -42,6 +43,8 @@ namespace CoreApiDemo
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseMiddleware<ErrorHandlerMiddleware>(); // add custom error handler
+
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
