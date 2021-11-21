@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Server.IISIntegration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -34,6 +35,7 @@ namespace CoreApiDemo
             services.AddSwaggerGen();
             services.AddScoped<IGithubRepository, GithubRepository>();
             services.AddScoped<IGithubService, GithubService>();
+            services.AddAuthentication(IISDefaults.AuthenticationScheme);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,7 +46,8 @@ namespace CoreApiDemo
                 app.UseDeveloperExceptionPage();
             }
             app.UseMiddleware<ErrorHandlerMiddleware>(); // add custom error handler
-
+            app.UseAuthentication();
+            app.UseAuthorization();
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
