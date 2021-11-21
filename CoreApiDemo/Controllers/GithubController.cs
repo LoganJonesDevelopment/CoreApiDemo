@@ -30,8 +30,8 @@ namespace CoreApiDemo.Controllers
             var userProfile = await _githubService.GetUserProfile(userId).ConfigureAwait(false); // configure await = false should prevent deadlocks
             if (userProfile.login == null)
             {
-                _logger.LogInformation("Entering Exception Handling");
-                throw new CustomException("Error retrieving profile for: " + userId);
+                _logger.LogInformation("Entering Exception Handling");  // file/db logging?
+                throw new CustomException("Error retrieving profile for: " + userId);  // elmah?
             }
             return userProfile;
         }

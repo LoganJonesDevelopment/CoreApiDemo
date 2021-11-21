@@ -10,7 +10,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApiDemo", "CoreApiDemo\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApiDemo.Infra", "CoreApiDemo.Infra\CoreApiDemo.Infra.csproj", "{30E87916-BA5F-4938-B5D1-66F42C062A9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApiDemo.Domain", "CoreApiDemo.Domain\CoreApiDemo.Domain.csproj", "{17358901-A483-47A2-AB44-28EDD0137936}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApiDemo.Domain", "CoreApiDemo.Domain\CoreApiDemo.Domain.csproj", "{17358901-A483-47A2-AB44-28EDD0137936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApiDemo.xUnitTesting", "CoreApiDemo.xUnitTesting\CoreApiDemo.xUnitTesting.csproj", "{C30840A2-4296-4DF8-828C-4F31495EEE60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +32,10 @@ Global
 		{17358901-A483-47A2-AB44-28EDD0137936}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17358901-A483-47A2-AB44-28EDD0137936}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17358901-A483-47A2-AB44-28EDD0137936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C30840A2-4296-4DF8-828C-4F31495EEE60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C30840A2-4296-4DF8-828C-4F31495EEE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C30840A2-4296-4DF8-828C-4F31495EEE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C30840A2-4296-4DF8-828C-4F31495EEE60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

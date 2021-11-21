@@ -36,6 +36,7 @@ namespace CoreApiDemo
             services.AddScoped<IGithubRepository, GithubRepository>();
             services.AddScoped<IGithubService, GithubService>();
             services.AddAuthentication(IISDefaults.AuthenticationScheme);
+            services.AddHealthChecks();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,6 +67,7 @@ namespace CoreApiDemo
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHealthChecks("/health");
             });
         }
     }
