@@ -13,10 +13,9 @@ namespace CoreApiDemo.Controllers
     [Route("[controller]")]
     public class GithubController : ControllerBase
     {
-
-
         private readonly ILogger<GithubController> _logger;
         private readonly IGithubService _githubService;
+
 
         public GithubController(ILogger<GithubController> logger, IGithubService githubService)
         {
@@ -27,14 +26,10 @@ namespace CoreApiDemo.Controllers
         [HttpGet]
         public async Task<UserProfile> GetUserProfile(string userId)
         {
-
-
             var userProfile = await _githubService.GetUserProfile(userId).ConfigureAwait(false);
-
-
-            throw new CustomException("Error retrieving profile for" + userId);
-
-
+            if (userProfile.login == null)
+                throw new CustomException("Error retrieving profile for" + userId);
+            return userProfile;
         }
     }
 }
